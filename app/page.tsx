@@ -1,8 +1,16 @@
 "use client";
 import Image from "next/image";
-import Navigation from "./components/Navigation";
-import Hero from "./components/Hero";
-import ClientLogos from "./components/ClientLogos";
+import { Navigation } from "./components/Navigation";
+import { Hero } from "./components/Hero";
+import { ClientLogos } from "./components/ClientLogos";
+import { Services } from "./components/Services";
+import { Projects } from "./components/Projects";
+import { Process } from "./components/Process";
+import { WhyChooseUs } from "./components/WhyChooseUs";
+import { Testimonials } from "./components/Testimonials";
+import { Pricing } from "./components/Pricing";
+import { CTABanner } from "./components/CTABanner";
+import { Footer } from "./components/Footer";
 
 export default function Home() {
   return (
@@ -10,6 +18,14 @@ export default function Home() {
       <Navigation />
       <Hero />
       <ClientLogos />
+      <Services />
+      <Projects />
+      <Process />
+      <WhyChooseUs />
+      <Testimonials />
+      <Pricing />
+      <CTABanner />
+      <Footer />
     </div>
   );
 }

@@ -1,9 +1,9 @@
-"use client";
 import { motion } from "motion/react";
-import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import { useState } from "react";
+import { Button } from "./ui/button";
 
-const Navigation = () => {
+export function Navigation() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const navItems = [
@@ -27,7 +27,7 @@ const Navigation = () => {
             href="#"
             className="text-2xl font-bold bg-gradient-to-r from-purple-400 to-cyan-400 bg-clip-text text-transparent"
           >
-            Digital Agency
+            STUDIO
           </a>
 
           {/* Desktop Navigation */}
@@ -45,9 +45,9 @@ const Navigation = () => {
 
           {/* CTA Button */}
           <div className="hidden lg:block">
-            <button className="bg-gradient-to-r from-purple-600 to-cyan-600 hover:from-purple-700 hover:to-cyan-700 text-white px-6 rounded-xl">
+            <Button className="bg-gradient-to-r from-purple-600 to-cyan-600 hover:from-purple-700 hover:to-cyan-700 text-white px-6 rounded-xl">
               Get Started
-            </button>
+            </Button>
           </div>
 
           {/* Mobile Menu Button */}
@@ -83,14 +83,13 @@ const Navigation = () => {
                   {item.name}
                 </a>
               ))}
-              <button className="bg-gradient-to-r from-purple-600 to-cyan-600 hover:from-purple-700 hover:to-cyan-700 text-white mt-4">
+              <Button className="bg-gradient-to-r from-purple-600 to-cyan-600 hover:from-purple-700 hover:to-cyan-700 text-white mt-4">
                 Get Started
-              </button>
+              </Button>
             </div>
           </motion.div>
         )}
       </div>
     </motion.nav>
   );
-};
-export default Navigation;
+}

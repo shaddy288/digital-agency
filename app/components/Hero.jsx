@@ -1,9 +1,9 @@
-"use client";
 import { motion } from "motion/react";
 import { ArrowRight, Sparkles } from "lucide-react";
+import { Button } from "./ui/button";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
 
-const Hero = () => {
+export function Hero() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Gradient Background */}
@@ -52,20 +52,20 @@ const Hero = () => {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <button
+              <Button
                 size="lg"
-                className="bg-gradient-to-r from-purple-600 to-cyan-600 hover:from-purple-700 hover:to-cyan-700 text-white px-6 py-4 rounded-2xl shadow-lg shadow-purple-500/25 hover:shadow-purple-500/40 transition-all duration-300"
+                className="bg-gradient-to-r from-purple-600 to-cyan-600 hover:from-purple-700 hover:to-cyan-700 text-white px-8 py-6 rounded-2xl shadow-lg shadow-purple-500/25 hover:shadow-purple-500/40 transition-all duration-300"
               >
                 Start Your Project
-                <ArrowRight className="w-5 h-5 ml-2 inline-block" />
-              </button>
-              <button
+                <ArrowRight className="w-5 h-5 ml-2" />
+              </Button>
+              <Button
                 size="lg"
                 variant="outline"
                 className="border-white/20 bg-back hover:bg-white/5 text-white px-8 py-6 rounded-2xl backdrop-blur-sm transition-all duration-300"
               >
                 View Our Work
-              </button>
+              </Button>
             </div>
 
             {/* Stats */}
@@ -164,4 +164,3 @@ const Hero = () => {
     </section>
   );
 }
-export default Hero;
