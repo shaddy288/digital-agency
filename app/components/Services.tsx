@@ -5,7 +5,7 @@ export function Services() {
   const services = [
     {
       icon: Palette,
-      title: "Branding",
+      title: "Digital Strategy",
       description:
         "Complete brand identity systems that resonate with your audience and stand out in the market.",
       gradient: "from-purple-500 to-pink-500",
@@ -13,7 +13,7 @@ export function Services() {
     },
     {
       icon: Layers,
-      title: "UI/UX Design",
+      title: "Website & Platform Consulting",
       description:
         "User-centered interfaces that combine beauty with functionality.",
       gradient: "from-cyan-500 to-blue-500",
@@ -21,7 +21,7 @@ export function Services() {
     },
     {
       icon: Code,
-      title: "Web Development",
+      title: "Product Strategy",
       description:
         "High-performance websites and applications built with modern technologies.",
       gradient: "from-orange-500 to-red-500",
@@ -29,14 +29,14 @@ export function Services() {
     },
     {
       icon: Video,
-      title: "Motion Design",
+      title: "Growth Planning",
       description: "Captivating animations that bring your brand to life.",
       gradient: "from-green-500 to-emerald-500",
       large: false,
     },
     {
       icon: Sparkles,
-      title: "AI Solutions",
+      title: "Customer Experience Mapping",
       description:
         "Intelligent automation and AI-powered features that transform user experiences.",
       gradient: "from-violet-500 to-purple-500",
@@ -62,8 +62,13 @@ export function Services() {
               Services
             </span>
           </h2>
+          <p className="text-2xl text-gray-400 max-w-2xl mx-auto mb-4 font-bold">
+            Digital transformation begins with clarity.
+          </p>
           <p className="text-xl text-gray-400 max-w-2xl mx-auto">
-            End-to-end digital solutions tailored to elevate your brand
+            We help businesses define digital roadmaps, customer journeys,
+            platform strategies, and growth plans that align technology with
+            business outcomes.
           </p>
         </motion.div>
 

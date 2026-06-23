@@ -2,6 +2,7 @@ import { motion } from "motion/react";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import { Button } from "./ui/button";
+import Image from "next/image";
 
 export function Navigation() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -27,7 +28,7 @@ export function Navigation() {
             href="#"
             className="text-2xl font-bold bg-gradient-to-r from-purple-400 to-cyan-400 bg-clip-text text-transparent"
           >
-            STUDIO
+            {/* <Image src="./logo.png" width={100} height={100} /> */} LOGO
           </a>
 
           {/* Desktop Navigation */}

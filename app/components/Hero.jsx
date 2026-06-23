@@ -38,17 +38,17 @@ export function Hero() {
               </span>
             </motion.div>
 
-            <h1 className="text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-bold text-white mb-6 leading-tight">
-              Crafting
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-white mb-6 leading-tight">
+              From Idea to Scale.
               <span className="block bg-gradient-to-r from-purple-400 via-cyan-400 to-purple-400 bg-clip-text text-transparent">
-                Digital Excellence
+                We Build Digital Businesses That Grow.
               </span>
             </h1>
 
             <p className="text-lg sm:text-xl text-gray-400 mb-8 max-w-2xl mx-auto lg:mx-0">
-              We transform ambitious ideas into stunning digital experiences.
-              From branding to AI-powered solutions, we're your creative partner
-              for the future.
+              VR2 Digital combines strategy, design, technology, and performance
+              marketing to help startups, SMEs, and growing brands launch
+              faster, generate leads, and scale sustainably.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
@@ -56,7 +56,7 @@ export function Hero() {
                 size="lg"
                 className="bg-gradient-to-r from-purple-600 to-cyan-600 hover:from-purple-700 hover:to-cyan-700 text-white px-8 py-6 rounded-2xl shadow-lg shadow-purple-500/25 hover:shadow-purple-500/40 transition-all duration-300"
               >
-                Start Your Project
+                Let's Build Together
                 <ArrowRight className="w-5 h-5 ml-2" />
               </Button>
               <Button
@@ -64,7 +64,7 @@ export function Hero() {
                 variant="outline"
                 className="border-white/20 bg-back hover:bg-white/5 text-white px-8 py-6 rounded-2xl backdrop-blur-sm transition-all duration-300"
               >
-                View Our Work
+                Book a Free Consultation
               </Button>
             </div>
 

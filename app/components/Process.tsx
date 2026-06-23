@@ -6,36 +6,31 @@ export function Process() {
     {
       icon: Search,
       title: "Discover",
-      description:
-        "We dive deep into your business, audience, and goals to understand what success looks like.",
+      description: "Understand your business, customers, and goals.",
       gradient: "from-purple-500 to-pink-500",
     },
     {
       icon: Lightbulb,
       title: "Strategy",
-      description:
-        "We craft a comprehensive roadmap that aligns creative vision with business objectives.",
+      description: "Build a roadmap for growth and success.",
       gradient: "from-cyan-500 to-blue-500",
     },
     {
       icon: Palette,
       title: "Design",
-      description:
-        "Our designers create stunning, user-centered experiences that captivate and convert.",
+      description: "Create engaging experiences and interfaces.",
       gradient: "from-orange-500 to-red-500",
     },
     {
       icon: Code2,
       title: "Develop",
-      description:
-        "We build with cutting-edge technologies, ensuring performance and scalability.",
+      description: "Develop scalable digital solutions.",
       gradient: "from-green-500 to-emerald-500",
     },
     {
       icon: Rocket,
       title: "Launch",
-      description:
-        "We deploy your solution and provide ongoing support to ensure continuous success.",
+      description: "Drive traffic, leads, and measurable business outcomes.",
       gradient: "from-violet-500 to-purple-500",
     },
   ];
