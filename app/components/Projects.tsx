@@ -35,7 +35,10 @@ export function Projects() {
   ];
 
   return (
-    <section className="py-32 bg-gradient-to-b from-[#0B0F19] to-[#0F1419] relative overflow-hidden">
+    <section
+      id="work"
+      className="py-32 bg-gradient-to-b from-[#0B0F19] to-[#0F1419] relative overflow-hidden"
+    >
       {/* Background Elements */}
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-cyan-500/10 rounded-full blur-[120px]"></div>
 

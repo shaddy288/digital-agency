@@ -1,146 +1,243 @@
 import { motion } from "motion/react";
-import { Palette, Layers, Code, Video, Sparkles } from "lucide-react";
+import { Compass, Sparkles, Code2, TrendingUp } from "lucide-react";
+
+const services = [
+  {
+    icon: Compass,
+    number: "01",
+    title: "Strategy & Consulting",
+    tagline: "Digital transformation begins with clarity.",
+    description:
+      "We help businesses define digital roadmaps, customer journeys, platform strategies, and growth plans that align technology with business outcomes.",
+    items: [
+      "Digital Strategy",
+      "Website & Platform Consulting",
+      "Product Strategy",
+      "Customer Experience Mapping",
+      "Growth Planning",
+    ],
+    accent: "#7B2FBE",
+    accentEnd: "#C850C0",
+    glowColor: "rgba(123,47,190,0.18)",
+  },
+  {
+    icon: Sparkles,
+    number: "02",
+    title: "Design & Experience",
+    tagline:
+      "Design isn't just about aesthetics. It's about experiences customers remember.",
+    description:
+      "We craft brands, websites, and user experiences that build trust and drive action.",
+    items: [
+      "Brand Identity Design",
+      "UI/UX Design",
+      "Website Design",
+      "Landing Pages",
+      "Marketing Creatives",
+      "Design Systems",
+    ],
+    accent: "#C850C0",
+    accentEnd: "#FF6B35",
+    glowColor: "rgba(200,80,192,0.16)",
+  },
+  {
+    icon: Code2,
+    number: "03",
+    title: "Technology & Development",
+    tagline: "Reliable technology is the foundation of growth.",
+    description:
+      "We build websites, mobile applications, and digital platforms that are fast, scalable, and future-ready.",
+    items: [
+      "Website Development",
+      "E-commerce Development",
+      "Mobile Apps",
+      "CMS Development",
+      "Chatbots & Automation",
+      "DevOps & Hosting Support",
+    ],
+    accent: "#00D4FF",
+    accentEnd: "#7B2FBE",
+    glowColor: "rgba(0,212,255,0.14)",
+  },
+  {
+    icon: TrendingUp,
+    number: "04",
+    title: "Growth & Performance Marketing",
+    tagline: "Getting online is only the beginning.",
+    description:
+      "Our growth team helps businesses attract the right audience, generate leads, and improve conversions through data-driven marketing.",
+    items: [
+      "Performance Marketing",
+      "Google Ads",
+      "Meta Ads",
+      "LinkedIn Campaigns",
+      "SEO",
+      "Marketing Automation",
+      "Analytics & Reporting",
+    ],
+    accent: "#FF6B35",
+    accentEnd: "#C850C0",
+    glowColor: "rgba(255,107,53,0.14)",
+  },
+];
 
 export function Services() {
-  const services = [
-    {
-      icon: Palette,
-      title: "Digital Strategy",
-      description:
-        "Complete brand identity systems that resonate with your audience and stand out in the market.",
-      gradient: "from-purple-500 to-pink-500",
-      large: true,
-    },
-    {
-      icon: Layers,
-      title: "Website & Platform Consulting",
-      description:
-        "User-centered interfaces that combine beauty with functionality.",
-      gradient: "from-cyan-500 to-blue-500",
-      large: false,
-    },
-    {
-      icon: Code,
-      title: "Product Strategy",
-      description:
-        "High-performance websites and applications built with modern technologies.",
-      gradient: "from-orange-500 to-red-500",
-      large: false,
-    },
-    {
-      icon: Video,
-      title: "Growth Planning",
-      description: "Captivating animations that bring your brand to life.",
-      gradient: "from-green-500 to-emerald-500",
-      large: false,
-    },
-    {
-      icon: Sparkles,
-      title: "Customer Experience Mapping",
-      description:
-        "Intelligent automation and AI-powered features that transform user experiences.",
-      gradient: "from-violet-500 to-purple-500",
-      large: true,
-    },
-  ];
-
   return (
-    <section className="py-32 bg-[#0B0F19] relative overflow-hidden">
-      {/* Background Elements */}
-      <div className="absolute top-0 right-0 w-96 h-96 bg-purple-500/10 rounded-full blur-[120px]"></div>
+    <section
+      id="services"
+      className="relative py-28 bg-[#0B0F19] overflow-hidden"
+    >
+      {/* Ambient glows */}
+      <div className="absolute inset-0 pointer-events-none">
+        <div className="absolute top-0 left-1/4 w-[600px] h-[600px] rounded-full bg-[#7B2FBE]/8 blur-[140px]" />
+        <div className="absolute bottom-0 right-1/4 w-[500px] h-[500px] rounded-full bg-[#00D4FF]/6 blur-[140px]" />
+      </div>
 
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-12">
+        {/* Header */}
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 24 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-center mb-16"
+          transition={{ duration: 0.6 }}
+          className="mb-20"
         >
-          <h2 className="text-5xl sm:text-6xl font-bold text-white mb-6">
-            Our{" "}
-            <span className="bg-gradient-to-r from-purple-400 to-cyan-400 bg-clip-text text-transparent">
-              Services
+          <div className="flex items-center gap-3 mb-6">
+            <div className="w-8 h-px bg-gradient-to-r from-[#7B2FBE] to-[#00D4FF]" />
+            <span className="text-xs font-semibold tracking-[0.25em] uppercase text-[#00D4FF]">
+              What We Do
             </span>
-          </h2>
-          <p className="text-2xl text-gray-400 max-w-2xl mx-auto mb-4 font-bold">
-            Digital transformation begins with clarity.
-          </p>
-          <p className="text-xl text-gray-400 max-w-2xl mx-auto">
-            We help businesses define digital roadmaps, customer journeys,
-            platform strategies, and growth plans that align technology with
-            business outcomes.
-          </p>
+          </div>
+          <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6">
+            <h2 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white leading-[1.05] tracking-tight max-w-xl">
+              Everything your{" "}
+              <span className="bg-gradient-to-r from-[#7B2FBE] via-[#C850C0] to-[#00D4FF] bg-clip-text text-transparent">
+                business needs
+              </span>{" "}
+              to grow online.
+            </h2>
+            <p className="text-white/45 text-base max-w-xs lg:text-right leading-relaxed">
+              Four integrated practice areas. One accountable partner.
+            </p>
+          </div>
         </motion.div>
 
-        {/* Bento Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
-          {services.map((service, index) => {
+        {/* Service cards */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {services.map((service, i) => {
             const Icon = service.icon;
             return (
               <motion.div
-                key={service.title}
-                initial={{ opacity: 0, y: 30 }}
+                key={service.number}
+                initial={{ opacity: 0, y: 32 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ delay: index * 0.1 }}
-                whileHover={{ y: -8 }}
-                className={`
-                  group relative rounded-3xl overflow-hidden backdrop-blur-xl
-                  bg-gradient-to-br from-white/5 to-white/[0.02] 
-                  border border-white/10 hover:border-white/20
-                  transition-all duration-500 cursor-pointer
-                  ${service.large ? "md:col-span-2" : "md:col-span-1"}
-                  ${service.large ? "lg:col-span-2" : "lg:col-span-1"}
-                  p-8 lg:p-10
-                `}
+                transition={{ duration: 0.55, delay: i * 0.08 }}
+                whileHover={{ y: -6 }}
+                className="group relative rounded-3xl border border-white/8 bg-white/[0.03] backdrop-blur-sm overflow-hidden p-8 lg:p-10 transition-all duration-500 hover:border-white/15 cursor-default"
+                style={{
+                  boxShadow: `0 0 0 0 ${service.glowColor}`,
+                }}
               >
-                {/* Gradient Overlay */}
+                {/* Hover glow fill */}
                 <div
-                  className={`absolute inset-0 bg-gradient-to-br ${service.gradient} opacity-0 group-hover:opacity-10 transition-opacity duration-500`}
-                ></div>
+                  className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-3xl"
+                  style={{
+                    background: `radial-gradient(ellipse at 30% 20%, ${service.glowColor} 0%, transparent 70%)`,
+                  }}
+                />
 
-                {/* Glow Effect */}
-                <div
-                  className={`absolute -inset-1 bg-gradient-to-br ${service.gradient} opacity-0 group-hover:opacity-20 blur-xl transition-opacity duration-500`}
-                ></div>
-
-                <div className="relative z-10">
-                  {/* Icon */}
-                  <div
-                    className={`w-14 h-14 rounded-2xl bg-gradient-to-br ${service.gradient} p-3 mb-6 group-hover:scale-110 transition-transform duration-300`}
+                {/* Top row: number + icon */}
+                <div className="relative z-10 flex items-start justify-between mb-8">
+                  <span
+                    className="text-xs font-bold tracking-[0.2em] tabular-nums"
+                    style={{ color: service.accent }}
                   >
-                    <Icon className="w-full h-full text-white" />
+                    {service.number}
+                  </span>
+                  <div
+                    className="w-12 h-12 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300"
+                    style={{
+                      background: `linear-gradient(135deg, ${service.accent}26, ${service.accentEnd}1a)`,
+                      border: `1px solid ${service.accent}30`,
+                    }}
+                  >
+                    <Icon
+                      className="w-5 h-5"
+                      style={{ color: service.accent }}
+                    />
                   </div>
+                </div>
 
-                  <h3 className="text-2xl font-bold text-white mb-4">
+                {/* Title */}
+                <div className="relative z-10 mb-3">
+                  <h3 className="text-xl sm:text-2xl font-bold text-white leading-tight">
                     {service.title}
                   </h3>
-                  <p className="text-gray-400 leading-relaxed">
-                    {service.description}
-                  </p>
+                </div>
 
-                  {/* Hover Arrow */}
-                  <div className="mt-6 flex items-center text-transparent group-hover:text-white transition-colors duration-300">
-                    <span className="text-sm font-medium">Learn More</span>
-                    <svg
-                      className="w-4 h-4 ml-2 group-hover:translate-x-2 transition-transform duration-300"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
+                {/* Tagline */}
+                <p
+                  className="relative z-10 text-sm font-medium mb-3 leading-snug"
+                  style={{ color: service.accent }}
+                >
+                  {service.tagline}
+                </p>
+
+                {/* Description */}
+                <p className="relative z-10 text-white/50 text-sm leading-relaxed mb-7">
+                  {service.description}
+                </p>
+
+                {/* Divider */}
+                <div
+                  className="relative z-10 h-px mb-7 opacity-20"
+                  style={{
+                    background: `linear-gradient(to right, ${service.accent}, transparent)`,
+                  }}
+                />
+
+                {/* Services list */}
+                <ul className="relative z-10 grid grid-cols-2 gap-x-4 gap-y-2">
+                  {service.items.map((item) => (
+                    <li
+                      key={item}
+                      className="flex items-center gap-2 text-sm text-white/55 group-hover:text-white/70 transition-colors duration-300"
                     >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M9 5l7 7-7 7"
+                      <span
+                        className="w-1 h-1 rounded-full flex-shrink-0"
+                        style={{ backgroundColor: service.accent }}
                       />
-                    </svg>
-                  </div>
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+
+                {/* Bottom CTA */}
+                <div className="relative z-10 mt-8 flex items-center gap-1.5 text-xs font-semibold tracking-wide opacity-0 group-hover:opacity-100 transition-all duration-300 translate-y-1 group-hover:translate-y-0">
+                  <span style={{ color: service.accent }}>Explore service</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="12"
+                    height="12"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    style={{ color: service.accent }}
+                  >
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                  </svg>
                 </div>
               </motion.div>
             );
           })}
         </div>
+
+        {/* Bottom rule */}
+        <div className="mt-24 h-px bg-gradient-to-r from-transparent via-white/10 to-transparent" />
       </div>
     </section>
   );
