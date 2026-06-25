@@ -5,31 +5,33 @@ export function WhyChooseUs() {
   const stats = [
     {
       icon: Award,
-      value: "15+",
-      label: "Industry Awards",
-      description: "Recognized for excellence in design and innovation",
+      label: "End-to-End Expertise",
+      description: "From strategy to execution, one team handles everything.",
       gradient: "from-purple-500 to-pink-500",
     },
     {
       icon: Users,
-      value: "500+",
-      label: "Happy Clients",
-      description: "Trusted by startups and enterprises worldwide",
+      label: "Business-First Thinking",
+      description: "We focus on measurable outcomes, not vanity metrics.",
       gradient: "from-cyan-500 to-blue-500",
     },
     {
       icon: Zap,
-      value: "98%",
-      label: "On-Time Delivery",
-      description: "We respect deadlines and exceed expectations",
+      label: "Agile Delivery",
+      description: "Faster execution with transparent communication.",
       gradient: "from-orange-500 to-red-500",
     },
     {
       icon: Heart,
-      value: "4.9/5",
-      label: "Client Rating",
-      description: "Exceptional satisfaction across all projects",
+      label: "Growth-Oriented Approach",
+      description: "Every project is built with scalability in mind.",
       gradient: "from-green-500 to-emerald-500",
+    },
+    {
+      icon: Heart,
+      label: "Long-Term Partnership",
+      description: "We don't just launch projects. We help them grow.",
+      gradient: "from-rose-500 to-violet-500",
     },
   ];
 
@@ -49,7 +51,7 @@ export function WhyChooseUs() {
           <h2 className="text-5xl sm:text-6xl font-bold text-white mb-6">
             Why{" "}
             <span className="bg-gradient-to-r from-orange-400 to-pink-400 bg-clip-text text-transparent">
-              Choose Us
+              VR2 Digital
             </span>
           </h2>
           <p className="text-xl text-gray-400 max-w-2xl mx-auto">
@@ -57,7 +59,7 @@ export function WhyChooseUs() {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6 max-w-7xl mx-auto">
           {stats.map((stat, index) => {
             const Icon = stat.icon;
             return (
@@ -75,7 +77,7 @@ export function WhyChooseUs() {
                 ></div>
 
                 {/* Card */}
-                <div className="relative rounded-3xl overflow-hidden backdrop-blur-xl bg-gradient-to-br from-white/5 to-white/[0.02] border border-white/10 group-hover:border-white/20 transition-all duration-500 p-8">
+                <div className="relative rounded-3xl overflow-hidden backdrop-blur-xl bg-gradient-to-br from-white/5 to-white/[0.02] border border-white/10 group-hover:border-white/20 transition-all duration-500 p-8 h-65">
                   {/* Top Gradient Bar */}
                   <div
                     className={`absolute top-0 left-0 right-0 h-1 bg-gradient-to-r ${stat.gradient}`}

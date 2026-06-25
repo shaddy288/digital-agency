@@ -2,14 +2,13 @@ import { motion } from "motion/react";
 
 export function ClientLogos() {
   const clients = [
-    "NEXUS",
-    "QUANTUM",
-    "VERTEX",
-    "AXIOM",
-    "ZENITH",
-    "PULSE",
-    "PRISM",
-    "NOVA",
+    "Startups",
+    "D2C Brands",
+    "SMEs",
+    "Healthcare",
+    "Education",
+    "Professional Services",
+    "Technology Companies",
   ];
 
   return (
@@ -21,11 +20,11 @@ export function ClientLogos() {
           viewport={{ once: true }}
           className="text-center text-gray-500 text-sm uppercase tracking-wider mb-12"
         >
-          Trusted by Industry Leaders
+          Industries We Serve
         </motion.p>
 
         <div className="relative overflow-hidden">
-          <div className="flex items-center justify-center gap-16 flex-wrap">
+          <div className="flex items-center justify-center uppercase gap-15 flex-wrap">
             {clients.map((client, index) => (
               <motion.div
                 key={client}

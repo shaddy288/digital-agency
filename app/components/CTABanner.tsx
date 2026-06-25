@@ -77,7 +77,7 @@ export function CTABanner() {
                 >
                   Let's Build Something
                   <span className="block bg-gradient-to-r from-purple-400 via-cyan-400 to-orange-400 bg-clip-text text-transparent">
-                    Extraordinary Together
+                    Meaningful
                   </span>
                 </motion.h2>
 
@@ -88,9 +88,11 @@ export function CTABanner() {
                   transition={{ delay: 0.2 }}
                   className="text-xl text-gray-300 mb-10 max-w-3xl mx-auto leading-relaxed"
                 >
-                  Your next big idea deserves a partner who understands both
-                  creativity and technology. Let's craft digital experiences
-                  that your users will love and remember.
+                  Whether you're launching a new business, redesigning your
+                  digital presence, or scaling your growth efforts, we're ready
+                  to help.
+                  <br />
+                  Book a discovery call and let's explore what's possible.
                 </motion.p>
 
                 <motion.div
