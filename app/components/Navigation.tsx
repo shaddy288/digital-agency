@@ -69,7 +69,7 @@ export function Navigation() {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="lg:hidden text-white p-2"
+            className="lg:hidden text-black p-2"
             aria-label="Toggle menu"
           >
             {mobileMenuOpen ? (
@@ -94,7 +94,7 @@ export function Navigation() {
                   key={item.href}
                   href={item.href}
                   onClick={(e) => handleScroll(e, item.href)}
-                  className="text-gray-300 hover:text-white transition-colors text-sm font-medium py-2"
+                  className="text-black-300 hover:text-white transition-colors text-sm font-medium py-2"
                 >
                   {item.name}
                 </a>

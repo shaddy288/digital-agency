@@ -120,6 +120,7 @@ export function Process() {
         </div>
 
         {/* Additional Info */}
+        {/* Additional Info */}
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
@@ -127,36 +128,30 @@ export function Process() {
           transition={{ delay: 0.5 }}
           className="mt-16 text-center"
         >
-          <div className="inline-flex items-center gap-8 px-8 py-6 rounded-3xl bg-white/5 backdrop-blur-xl border border-white/10">
-            <div>
-              <div className="text-1xl font-bold text-white mb-1">
-                Launch products faster
+          <div className="inline-flex flex-col sm:flex-row flex-wrap items-center justify-center gap-4 sm:gap-0 px-6 sm:px-8 py-6 rounded-3xl bg-white/5 backdrop-blur-xl border border-white/10 w-full sm:w-auto">
+            {[
+              "Launch products faster",
+              "Increase qualified leads",
+              "Improve conversion rates",
+              "Build stronger brands",
+              "Create better customer experiences",
+            ].map((item, index, arr) => (
+              <div
+                key={item}
+                className="flex flex-col sm:flex-row items-center gap-4 sm:gap-0"
+              >
+                <div className="text-sm sm:text-base font-bold text-white text-center px-4">
+                  {item}
+                </div>
+                {/* Divider — vertical on desktop, horizontal on mobile */}
+                {index < arr.length - 1 && (
+                  <>
+                    <div className="hidden sm:block w-px h-10 bg-white/10" />
+                    <div className="block sm:hidden w-16 h-px bg-white/10" />
+                  </>
+                )}
               </div>
-            </div>
-            <div className="w-px h-12 bg-white/10"></div>
-            <div>
-              <div className="text-1xl font-bold text-white mb-1">
-                Increase qualified leads
-              </div>
-            </div>
-            <div className="w-px h-12 bg-white/10"></div>
-            <div>
-              <div className="text-1xl font-bold text-white mb-1">
-                Improve conversion rates
-              </div>
-            </div>
-            <div className="w-px h-12 bg-white/10"></div>
-            <div>
-              <div className="text-1xl font-bold text-white mb-1">
-                Build stronger brands
-              </div>
-            </div>
-            <div className="w-px h-12 bg-white/10"></div>
-            <div>
-              <div className="text-1xl font-bold text-white mb-1">
-                Create better customer experiences
-              </div>
-            </div>
+            ))}
           </div>
         </motion.div>
 
