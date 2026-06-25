@@ -91,9 +91,9 @@ export function WhyChooseUs() {
                   </div>
 
                   {/* Value */}
-                  <div className="text-5xl font-bold text-white mb-2 group-hover:scale-105 transition-transform duration-300">
+                  {/* <div className="text-5xl font-bold text-white mb-2 group-hover:scale-105 transition-transform duration-300">
                     {stat.value}
-                  </div>
+                  </div> */}
 
                   {/* Label */}
                   <div className="text-lg font-semibold text-white mb-3">
