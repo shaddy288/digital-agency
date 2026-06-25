@@ -214,7 +214,7 @@ export function Services() {
                 </ul>
 
                 {/* Bottom CTA */}
-                <div className="relative z-10 mt-8 flex items-center gap-1.5 text-xs font-semibold tracking-wide opacity-0 group-hover:opacity-100 transition-all duration-300 translate-y-1 group-hover:translate-y-0">
+                {/* <div className="relative z-10 mt-8 flex items-center gap-1.5 text-xs font-semibold tracking-wide opacity-0 group-hover:opacity-100 transition-all duration-300 translate-y-1 group-hover:translate-y-0">
                   <span style={{ color: service.accent }}>Explore service</span>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -230,7 +230,7 @@ export function Services() {
                   >
                     <path d="M5 12h14M12 5l7 7-7 7" />
                   </svg>
-                </div>
+                </div> */}
               </motion.div>
             );
           })}

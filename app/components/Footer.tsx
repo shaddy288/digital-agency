@@ -50,9 +50,9 @@ export function Footer() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
               >
-                <h3 className="text-3xl font-bold bg-gradient-to-r from-purple-400 to-cyan-400 bg-clip-text text-transparent mb-4">
+                {/* <h3 className="text-3xl font-bold bg-gradient-to-r from-purple-400 to-cyan-400 bg-clip-text text-transparent mb-4">
                   STUDIO
-                </h3>
+                </h3> */}
                 <p className="text-gray-400 mb-8 max-w-md leading-relaxed">
                   We're a digital agency that crafts exceptional experiences.
                   From bold brands to cutting-edge technology, we bring your

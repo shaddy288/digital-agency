@@ -31,7 +31,7 @@ export function Navigation() {
     <motion.nav
       initial={{ y: -100 }}
       animate={{ y: 0 }}
-      className="fixed top-0 left-0 right-0 z-50 bg-[#0B0F19]/40 backdrop-blur-xl border-b border-white/5"
+      className="fixed top-0 left-0 right-0 z-50 bg-white backdrop-blur-xl border-b border-white/5"
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
@@ -49,7 +49,7 @@ export function Navigation() {
                 key={item.href}
                 href={item.href}
                 onClick={(e) => handleScroll(e, item.href)}
-                className="text-gray-300 hover:text-white transition-colors text-sm font-medium"
+                className="text-black-300 hover:text-black transition-colors text-sm font-medium"
               >
                 {item.name}
               </a>
