@@ -44,7 +44,7 @@ export function About() {
             </div>
 
             {/* Stat row */}
-            <div className="grid grid-cols-3 gap-3 sm:gap-4 mt-6 sm:mt-10">
+            {/* <div className="grid grid-cols-3 gap-3 sm:gap-4 mt-6 sm:mt-10">
               {[
                 { value: "150+", label: "Projects Shipped" },
                 { value: "98%", label: "Client Retention" },
@@ -62,7 +62,7 @@ export function About() {
                   </div>
                 </div>
               ))}
-            </div>
+            </div> */}
           </div>
 
           {/* Right — body copy */}
@@ -113,7 +113,7 @@ export function About() {
             </div>
 
             {/* CTA */}
-            <div className="pt-4 sm:pt-6 flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-5">
+            {/* <div className="pt-4 sm:pt-6 flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-5">
               <a
                 href="#contact"
                 className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-gradient-to-r from-[#7B2FBE] to-[#00D4FF] text-white text-sm font-semibold hover:opacity-90 transition-opacity shadow-lg shadow-[#7B2FBE]/25"
@@ -139,7 +139,7 @@ export function About() {
               >
                 View our work
               </a>
-            </div>
+            </div> */}
           </div>
         </div>
 

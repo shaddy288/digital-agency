@@ -21,7 +21,7 @@ export default function Home() {
       <ClientLogos />
       <About />
       <Services />
-      <Projects />
+      {/* <Projects /> */}
       <WhyChooseUs />
       <Process />
       <Testimonials />
