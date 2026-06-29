@@ -20,9 +20,8 @@ export function Footer() {
       { name: "Contact", href: "#" },
     ],
     legal: [
-      { name: "Privacy Policy", href: "#" },
+      { name: "Privacy Policy", href: "/privacy-policy" },
       { name: "Terms of Service", href: "#" },
-      { name: "Cookie Policy", href: "#" },
     ],
   };
 
@@ -162,7 +161,7 @@ export function Footer() {
               viewport={{ once: true }}
               className="text-gray-500 text-sm"
             >
-              © 2026 STUDIO. All rights reserved.
+              © 2026 vr2digital.com. All rights reserved.
             </motion.p>
 
             {/* Social Links */}
