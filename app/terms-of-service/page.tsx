@@ -1,3 +1,4 @@
+"use client";
 import { Footer } from "../components/Footer";
 import { Navigation } from "../components/Navigation";
 
@@ -60,7 +61,7 @@ const sections = [
 export default function TermsOfService() {
   return (
     <>
-      {/* <Navigation /> */}
+      <Navigation />
       <main className="min-h-screen bg-[#0B0F19] relative overflow-hidden">
         {/* Background glows */}
         <div className="absolute top-1/4 -left-48 w-96 h-96 bg-purple-500/30 rounded-full blur-[120px] pointer-events-none" />
@@ -178,7 +179,7 @@ export default function TermsOfService() {
           </p>
         </div>
       </main>
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 }

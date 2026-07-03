@@ -21,7 +21,7 @@ export function Footer() {
     ],
     legal: [
       { name: "Privacy Policy", href: "/privacy-policy" },
-      { name: "Terms of Service", href: "#" },
+      { name: "Terms of Service", href: "/terms-of-service" },
     ],
   };
 
@@ -33,7 +33,10 @@ export function Footer() {
   ];
 
   return (
-    <footer className="bg-gradient-to-b from-[#0B0F19] to-black border-t border-white/5 relative overflow-hidden">
+    <footer
+      id="contact"
+      className="bg-gradient-to-b from-[#0B0F19] to-black border-t border-white/5 relative overflow-hidden"
+    >
       {/* Background Elements */}
       <div className="absolute top-0 left-0 w-96 h-96 bg-purple-500/5 rounded-full blur-[120px]"></div>
       <div className="absolute bottom-0 right-0 w-96 h-96 bg-cyan-500/5 rounded-full blur-[120px]"></div>
