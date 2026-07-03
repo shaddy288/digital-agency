@@ -102,16 +102,16 @@ export function Navigation() {
               className="lg:hidden border-t border-white/5 py-6"
             >
               <div className="flex flex-col gap-4">
-                {/* {navItems.map((item) => (
-                  
-                    // key={item.href}
-                    // href={item.href}
-                    // onClick={(e) => handleScroll(e, item.href)}
+                {navItems.map((item) => (
+                  <a
+                    key={item.href}
+                    href={item.href}
+                    onClick={(e) => handleScroll(e, item.href)}
                     className="text-black-300 hover:text-white transition-colors text-sm font-medium py-2"
                   >
                     {item.name}
                   </a>
-                ))} */}
+                ))}
                 <Button
                   onClick={() => {
                     setIsModalOpen(true);
