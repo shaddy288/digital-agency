@@ -85,7 +85,7 @@ export function Services() {
   return (
     <section
       id="services"
-      className="relative py-28 bg-[#0B0F19] overflow-hidden"
+      className="relative pt-28 bg-[#0B0F19] overflow-hidden"
     >
       {/* Ambient glows */}
       <div className="absolute inset-0 pointer-events-none">

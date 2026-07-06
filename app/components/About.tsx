@@ -2,7 +2,7 @@ export function About() {
   return (
     <section
       id="about"
-      className="relative py-16 sm:py-20 lg:py-28 overflow-hidden bg-[#0B0F19]"
+      className="relative pt-16 sm:pt-20 lg:pt-28  overflow-hidden bg-[#0B0F19]"
     >
       {/* Ambient mesh background */}
       <div className="absolute inset-0 pointer-events-none">
