@@ -94,7 +94,7 @@ export function About() {
             </p>
 
             {/* Capability pills */}
-            <div className="flex flex-wrap gap-2 pt-2 sm:pt-4">
+            {/* <div className="flex flex-wrap gap-2 pt-2 sm:pt-4">
               {[
                 "Website Development",
                 "E-commerce Development",
@@ -110,7 +110,7 @@ export function About() {
                   {cap}
                 </span>
               ))}
-            </div>
+            </div> */}
 
             {/* CTA */}
             {/* <div className="pt-4 sm:pt-6 flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-5">

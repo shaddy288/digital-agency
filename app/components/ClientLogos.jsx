@@ -1,41 +1,44 @@
 import { motion } from "motion/react";
+import { Sparkles } from "lucide-react";
 
 export function ClientLogos() {
-  const clients = [
-    "Startups",
-    "D2C Brands",
-    "SMEs",
-    "Healthcare",
-    "Education",
-    "Professional Services",
-    "Technology Companies",
-  ];
+  const industries = ["SMEs", "Performance Marketing", "Analytics"];
 
   return (
-    <section className="py-20 bg-[#0B0F19] border-y border-white/5">
+    <section className="border-y border-white/5 bg-[#0B0F19] py-20">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <motion.p
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          className="text-center text-gray-500 text-sm uppercase tracking-wider mb-12"
+        {/* Section Badge */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ delay: 0.2 }}
+          className="mb-10 flex justify-center"
         >
-          Industries We Serve
-        </motion.p>
+          <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 backdrop-blur-sm">
+            <Sparkles className="h-4 w-4 text-purple-400" />
+            <span className="text-sm font-medium text-gray-300">
+              Industries We Serve
+            </span>
+          </div>
+        </motion.div>
 
+        {/* Industries */}
         <div className="relative overflow-hidden">
-          <div className="flex items-center justify-center uppercase gap-15 flex-wrap">
-            {clients.map((client, index) => (
+          <div className="flex flex-wrap items-center justify-center gap-8 md:gap-14">
+            {industries.map((industry, index) => (
               <motion.div
-                key={client}
+                key={industry}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ delay: index * 0.1 }}
-                whileHover={{ scale: 1.1 }}
-                className="text-2xl font-bold text-white/20 hover:text-white/40 transition-colors duration-300 cursor-pointer"
+                transition={{ delay: index * 0.15 }}
+                whileHover={{
+                  scale: 1.08,
+                  color: "#ffffff",
+                }}
+                className="cursor-pointer text-center text-xl font-bold uppercase tracking-wide text-white/30 transition-colors duration-300 md:text-3xl"
               >
-                {client}
+                {industry}
               </motion.div>
             ))}
           </div>
