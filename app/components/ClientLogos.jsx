@@ -2,7 +2,15 @@ import { motion } from "motion/react";
 import { Sparkles } from "lucide-react";
 
 export function ClientLogos() {
-  const industries = ["SMEs", "Performance Marketing", "Analytics"];
+  const industries = [
+    "STARTUPS",
+    "D2C BRANDS",
+    "SMEs",
+    "HEALTHCARE",
+    "EDUCATION",
+    "PROFESSIONAL SERVICES",
+    "TECHNOLOGY COMPANIES",
+  ];
 
   return (
     <section className="border-y border-white/5 bg-[#0B0F19] py-20">
@@ -36,7 +44,7 @@ export function ClientLogos() {
                   scale: 1.08,
                   color: "#ffffff",
                 }}
-                className="cursor-pointer text-center text-xl font-bold uppercase tracking-wide text-white/30 transition-colors duration-300 md:text-3xl"
+                className="cursor-pointer text-center text-xl font-bold tracking-wide text-white/30 transition-colors duration-300 md:text-3xl"
               >
                 {industry}
               </motion.div>
