@@ -3,13 +3,13 @@ import { Sparkles } from "lucide-react";
 
 export function ClientLogos() {
   const clients = [
-    "Startups",
-    "D2C Brands",
+    "STARTUPS",
+    "D2C BRANDS",
     "SMEs",
-    "Healthcare",
-    "Education",
-    "Professional Services",
-    "Technology Companies",
+    "HEALTHCARE",
+    "EDUCATION",
+    "PROFESSIONAL SERVICES",
+    "TECHNOLOGY COMPANIES",
   ];
 
   return (
@@ -30,7 +30,7 @@ export function ClientLogos() {
         </motion.div>
 
         <div className="relative overflow-hidden">
-          <div className="flex items-center justify-center uppercase gap-15 flex-wrap">
+          <div className="flex items-center justify-center gap-15 flex-wrap">
             {clients.map((client, index) => (
               <motion.div
                 key={client}
