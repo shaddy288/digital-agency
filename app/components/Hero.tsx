@@ -74,7 +74,7 @@ export function Hero() {
               </div>
 
               {/* Stats */}
-              <motion.div
+              {/* <motion.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.6 }}
@@ -96,7 +96,7 @@ export function Hero() {
                   <div className="text-3xl font-bold text-white mb-1">15+</div>
                   <div className="text-sm text-gray-400">Awards Won</div>
                 </div>
-              </motion.div>
+              </motion.div> */}
             </motion.div>
 
             {/* Right Content - Floating Mockups */}

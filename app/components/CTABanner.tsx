@@ -14,7 +14,7 @@ export function CTABanner() {
         onClose={() => setIsModalOpen(false)}
       />
 
-      <section className="py-32 bg-[#0B0F19] relative overflow-hidden">
+      <section className="pt-16 pb-10 bg-[#0B0F19] relative overflow-hidden">
         {/* Background Gradients */}
         <div className="absolute inset-0">
           <div className="absolute top-1/2 left-1/4 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-purple-500/30 rounded-full blur-[150px]"></div>
