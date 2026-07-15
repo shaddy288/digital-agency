@@ -2,7 +2,7 @@ export function About() {
   return (
     <section
       id="about"
-      className="relative py-16 sm:py-20 lg:py-28 overflow-hidden bg-[#0B0F19]"
+      className="relative pt-16 sm:pt-20 lg:pt-28  overflow-hidden bg-[#0B0F19]"
     >
       {/* Ambient mesh background */}
       <div className="absolute inset-0 pointer-events-none">
@@ -94,7 +94,7 @@ export function About() {
             </p>
 
             {/* Capability pills */}
-            <div className="flex flex-wrap gap-2 pt-2 sm:pt-4">
+            {/* <div className="flex flex-wrap gap-2 pt-2 sm:pt-4">
               {[
                 "Website Development",
                 "E-commerce Development",
@@ -110,7 +110,7 @@ export function About() {
                   {cap}
                 </span>
               ))}
-            </div>
+            </div> */}
 
             {/* CTA */}
             {/* <div className="pt-4 sm:pt-6 flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-5">
