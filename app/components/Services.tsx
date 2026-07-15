@@ -198,7 +198,7 @@ export function Services() {
                 />
 
                 {/* Services list */}
-                <ul className="relative z-10 grid grid-cols-2 gap-x-4 gap-y-2">
+                <ul className="relative z-10 flex flex-col gap-y-2 lg:grid lg:grid-cols-2 lg:gap-x-4 lg:gap-y-2">
                   {service.items.map((item) => (
                     <li
                       key={item}

@@ -136,22 +136,27 @@ export function CTABanner() {
                     whileInView={{ opacity: 1 }}
                     viewport={{ once: true }}
                     transition={{ delay: 0.4 }}
-                    className="flex items-center justify-center gap-8 mt-12 text-sm text-gray-400"
+                    className="flex flex-col items-start justify-center gap-4 lg:flex-row lg:items-center lg:justify-center lg:gap-8 mt-12 text-sm text-gray-400"
                   >
                     <div className="flex items-center gap-2">
                       <div className="w-2 h-2 bg-green-400 rounded-full"></div>
                       <span>Free Consultation</span>
                     </div>
-                    <div className="w-px h-4 bg-white/20"></div>
+                    <div className="w-px h-4 bg-white/20 hidden lg:block"></div>
                     <div className="flex items-center gap-2">
                       <div className="w-2 h-2 bg-green-400 rounded-full"></div>
                       <span>No Commitment Required</span>
                     </div>
-                    <div className="w-px h-4 bg-white/20 hidden sm:block"></div>
-                    <div className="hidden sm:flex items-center gap-2">
+                    <div className="w-px h-4 bg-white/20 hidden lg:block"></div>
+                    <div className="flex items-center gap-2">
+                      <div className="w-2 h-2 bg-green-400 rounded-full"></div>
+                      <span>No Commitment Required</span>
+                    </div>
+                    {/* <div className="w-px h-4 bg-white/20 hidden sm:block"></div> */}
+                    {/* <div className="hidden sm:flex items-center gap-2">
                       <div className="w-2 h-2 bg-green-400 rounded-full"></div>
                       <span>Response in 24h</span>
-                    </div>
+                    </div> */}
                   </motion.div>
                 </div>
               </div>

@@ -1,9 +1,11 @@
 "use client";
 import { useState } from "react";
+import Image from "next/image";
+import heroImg from "./figma/hero.png";
+import heroImgSecond from "./figma/herosecond.png";
 import { motion } from "motion/react";
 import { ArrowRight, Sparkles } from "lucide-react";
 import { Button } from "./ui/button";
-import { ImageWithFallback } from "./figma/ImageWithFallback";
 import { ConsultationModal } from "./ConsultationModal";
 
 export function Hero() {
@@ -118,8 +120,8 @@ export function Hero() {
                   className="absolute top-0 left-0 w-4/5 rounded-2xl overflow-hidden shadow-2xl shadow-purple-500/20 border border-white/10"
                 >
                   <div className="bg-gradient-to-br from-purple-900/40 to-cyan-900/40 backdrop-blur-xl p-1 rounded-2xl">
-                    <ImageWithFallback
-                      src="https://images.unsplash.com/photo-1587902673915-631e5ba4488f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsYXB0b3AlMjBtYWNib29rJTIwbW9ja3VwJTIwd29ya3NwYWNlfGVufDF8fHx8MTc3OTI3NTAxNXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+                    <Image
+                      src={heroImg}
                       alt="Laptop mockup"
                       className="w-full h-auto rounded-xl"
                     />
@@ -137,9 +139,9 @@ export function Hero() {
                   className="absolute bottom-0 right-0 w-2/5 rounded-3xl overflow-hidden shadow-2xl shadow-cyan-500/20 border border-white/10"
                 >
                   <div className="bg-gradient-to-br from-cyan-900/40 to-purple-900/40 backdrop-blur-xl p-1 rounded-3xl">
-                    <ImageWithFallback
-                      src="https://images.unsplash.com/photo-1697292859784-c319e612ea15?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBzbWFydHBob25lJTIwbW9ja3VwJTIwZGFyayUyMHNjcmVlbnxlbnwxfHx8fDE3NzkyNzUwMTR8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-                      alt="Phone mockup"
+                    <Image
+                      src={heroImgSecond}
+                      alt="Second Image"
                       className="w-full h-auto rounded-2xl"
                     />
                   </div>

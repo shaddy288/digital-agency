@@ -77,7 +77,7 @@ export function WhyChooseUs() {
                 ></div>
 
                 {/* Card */}
-                <div className="relative rounded-3xl overflow-hidden backdrop-blur-xl bg-gradient-to-br from-white/5 to-white/[0.02] border border-white/10 group-hover:border-white/20 transition-all duration-500 p-8 h-80">
+                <div className="relative rounded-3xl overflow-hidden backdrop-blur-xl bg-gradient-to-br from-white/5 to-white/[0.02] border border-white/10 group-hover:border-white/20 transition-all duration-500 p-8 h-56 lg:h-80">
                   {/* Top Gradient Bar */}
                   <div
                     className={`absolute top-0 left-0 right-0 h-1 bg-gradient-to-r ${stat.gradient}`}
