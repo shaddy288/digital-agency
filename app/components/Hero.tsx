@@ -1,8 +1,6 @@
 "use client";
 import { useState } from "react";
 import Image from "next/image";
-import heroImg from "./figma/hero.png";
-import heroImgSecond from "./figma/herosecond.png";
 import { motion } from "motion/react";
 import { ArrowRight, Sparkles } from "lucide-react";
 import { Button } from "./ui/button";
@@ -54,7 +52,6 @@ export function Hero() {
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                {/* Let's Build Together — opens modal */}
                 <Button
                   size="lg"
                   onClick={() => setIsModalOpen(true)}
@@ -64,7 +61,6 @@ export function Hero() {
                   <ArrowRight className="w-5 h-5 ml-2" />
                 </Button>
 
-                {/* Book a Free Consultation — also opens modal */}
                 <Button
                   size="lg"
                   variant="outline"
@@ -74,31 +70,6 @@ export function Hero() {
                   Book a Free Consultation
                 </Button>
               </div>
-
-              {/* Stats */}
-              {/* <motion.div
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ delay: 0.6 }}
-                className="grid grid-cols-3 gap-8 mt-16 max-w-lg mx-auto lg:mx-0"
-              >
-                <div>
-                  <div className="text-3xl font-bold text-white mb-1">250+</div>
-                  <div className="text-sm text-gray-400">
-                    Projects Delivered
-                  </div>
-                </div>
-                <div>
-                  <div className="text-3xl font-bold text-white mb-1">98%</div>
-                  <div className="text-sm text-gray-400">
-                    Client Satisfaction
-                  </div>
-                </div>
-                <div>
-                  <div className="text-3xl font-bold text-white mb-1">15+</div>
-                  <div className="text-sm text-gray-400">Awards Won</div>
-                </div>
-              </motion.div> */}
             </motion.div>
 
             {/* Right Content - Floating Mockups */}
@@ -110,6 +81,7 @@ export function Hero() {
             >
               <div className="relative w-full h-[600px]">
                 {/* Laptop Mockup */}
+                {/* Laptop Mockup */}
                 <motion.div
                   animate={{ y: [0, -20, 0] }}
                   transition={{
@@ -119,16 +91,17 @@ export function Hero() {
                   }}
                   className="absolute top-0 left-0 w-4/5 rounded-2xl overflow-hidden shadow-2xl shadow-purple-500/20 border border-white/10"
                 >
-                  <div className="bg-gradient-to-br from-purple-900/40 to-cyan-900/40 backdrop-blur-xl p-1 rounded-2xl">
+                  <div className="relative bg-gradient-to-br from-purple-900/40 to-cyan-900/40 backdrop-blur-xl p-1 rounded-2xl aspect-video">
                     <Image
-                      src={heroImg}
+                      src="/images/hero.png"
                       alt="Laptop mockup"
-                      className="w-full h-auto rounded-xl"
+                      fill
+                      className="object-contain rounded-xl"
                     />
                   </div>
                 </motion.div>
 
-                {/* Phone Mockup */}
+                {/* Phone Mockup (ab landscape hoga) */}
                 <motion.div
                   animate={{ y: [0, 20, 0] }}
                   transition={{
@@ -138,11 +111,12 @@ export function Hero() {
                   }}
                   className="absolute bottom-0 right-0 w-2/5 rounded-3xl overflow-hidden shadow-2xl shadow-cyan-500/20 border border-white/10"
                 >
-                  <div className="bg-gradient-to-br from-cyan-900/40 to-purple-900/40 backdrop-blur-xl p-1 rounded-3xl">
+                  <div className="relative bg-gradient-to-br from-cyan-900/40 to-purple-900/40 backdrop-blur-xl p-1 rounded-3xl aspect-video">
                     <Image
-                      src={heroImgSecond}
+                      src="/images/herosecond.png"
                       alt="Second Image"
-                      className="w-full h-auto rounded-2xl"
+                      fill
+                      className="object-contain rounded-2xl"
                     />
                   </div>
                 </motion.div>
