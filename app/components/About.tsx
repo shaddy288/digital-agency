@@ -2,7 +2,7 @@ export function About() {
   return (
     <section
       id="about"
-      className="relative pt-16 sm:pt-20 lg:pt-28  overflow-hidden bg-[#0B0F19]"
+      className="relative pt-10 sm:pt-10 lg:pt-10  overflow-hidden bg-[#0B0F19]"
     >
       {/* Ambient mesh background */}
       <div className="absolute inset-0 pointer-events-none">
@@ -15,7 +15,7 @@ export function About() {
         {/* Label */}
         <div className="flex items-center gap-3 mb-6 sm:mb-8">
           <div className="w-8 h-px bg-gradient-to-r from-[#7B2FBE] to-[#00D4FF]" />
-          <span className="text-xs font-semibold tracking-[0.25em] uppercase text-[#00D4FF]">
+          <span className="text-xl font-semibold tracking-[0.25em] uppercase text-[#00D4FF]">
             About Us
           </span>
         </div>
@@ -144,7 +144,7 @@ export function About() {
         </div>
 
         {/* Bottom divider */}
-        <div className="mt-16 sm:mt-20 lg:mt-24 h-px bg-gradient-to-r from-transparent via-white/10 to-transparent" />
+        <div className="mt-10 sm:mt-10 lg:mt-14 h-px bg-gradient-to-r from-transparent via-white/10 to-transparent" />
       </div>
     </section>
   );

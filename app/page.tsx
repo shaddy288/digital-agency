@@ -12,6 +12,7 @@ import { Pricing } from "./components/Pricing";
 import { CTABanner } from "./components/CTABanner";
 import { Footer } from "./components/Footer";
 import { About } from "./components/About";
+import { ManagingPartner } from "./components/ManagingPartner";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
       <Hero />
       <ClientLogos />
       <About />
+      <ManagingPartner />
       <Services />
       {/* <Projects /> */}
       <WhyChooseUs />
