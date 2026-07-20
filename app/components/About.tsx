@@ -2,7 +2,7 @@ export function About() {
   return (
     <section
       id="about"
-      className="relative pt-10 sm:pt-10 lg:pt-10  overflow-hidden bg-[#0B0F19]"
+      className="relative pt-10 sm:pt-10 lg:pt-10 overflow-hidden bg-[#0B0F19]"
     >
       {/* Ambient mesh background */}
       <div className="absolute inset-0 pointer-events-none">
