@@ -36,23 +36,23 @@ export function Footer() {
     ],
   };
 
-  const socials = [
-    {
-      icon: FaFacebook,
-      href: "https://www.facebook.com/vr2digitalstudio/",
-      label: "Facebook",
-    },
-    {
-      icon: FaInstagram,
-      href: "https://www.instagram.com/vr2digital/",
-      label: "Instagram",
-    },
-    {
-      icon: FaTwitter,
-      href: "https://x.com/vr2digital",
-      label: "Twitter",
-    },
-  ];
+  // const socials = [
+  //   {
+  //     icon: FaFacebook,
+  //     href: "https://www.facebook.com/vr2digitalstudio/",
+  //     label: "Facebook",
+  //   },
+  //   {
+  //     icon: FaInstagram,
+  //     href: "https://www.instagram.com/vr2digital/",
+  //     label: "Instagram",
+  //   },
+  //   {
+  //     icon: FaTwitter,
+  //     href: "https://x.com/vr2digital",
+  //     label: "Twitter",
+  //   },
+  // ];
 
   return (
     <>
@@ -174,7 +174,7 @@ export function Footer() {
                 © 2026 vr2digital.com. All rights reserved.
               </motion.p>
 
-              <motion.div
+              {/* <motion.div
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 viewport={{ once: true }}
@@ -196,7 +196,7 @@ export function Footer() {
                     </a>
                   );
                 })}
-              </motion.div>
+              </motion.div> */}
             </div>
           </div>
         </div>
