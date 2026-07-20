@@ -13,7 +13,7 @@ export function ClientLogos() {
   ];
 
   return (
-    <section className="border-y border-white/5 bg-[#0B0F19] py-20">
+    <section className="border-y border-white/5 bg-[#0B0F19] py-20 sm:py-10">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Badge */}
         <motion.div
@@ -24,7 +24,7 @@ export function ClientLogos() {
         >
           <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 backdrop-blur-sm">
             <Sparkles className="h-4 w-4 text-purple-400" />
-            <span className="text-sm font-medium text-gray-300">
+            <span className="text-lg font-medium text-gray-300">
               Industries We Serve
             </span>
           </div>

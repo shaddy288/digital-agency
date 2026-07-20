@@ -17,7 +17,7 @@ export function Hero() {
         onClose={() => setIsModalOpen(false)}
       />
 
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      <section className="relative min-h-[65vh] lg:min-h-screen flex items-center justify-center overflow-hidden">
         {/* Gradient Background */}
         <div className="absolute inset-0 bg-[#0B0F19]">
           <div className="absolute inset-0 bg-gradient-to-br from-purple-900/20 via-transparent to-cyan-900/20"></div>
@@ -29,7 +29,7 @@ export function Hero() {
         {/* Mesh Grid Overlay */}
         <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:100px_100px]"></div>
 
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 pt-24 lg:pt-28">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 pt-6 lg:pt-28">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Left Content */}
             <motion.div
@@ -38,14 +38,14 @@ export function Hero() {
               transition={{ duration: 0.8 }}
               className="text-center lg:text-left"
             >
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-6xl font-bold text-white mb-6 leading-tight">
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-6xl font-bold text-white mb-3 lg:mb-6 leading-tight">
                 From Idea to Scale.
                 <span className="block bg-gradient-to-r from-purple-400 via-cyan-400 to-purple-400 bg-clip-text text-transparent">
                   We Build Digital Businesses That Grow.
                 </span>
               </h1>
 
-              <p className="text-lg sm:text-xl text-gray-400 mb-8 max-w-2xl mx-auto lg:mx-0">
+              <p className="text-lg sm:text-xl text-gray-400 mb-4 lg:mb-8 max-w-2xl mx-auto lg:mx-0">
                 VR2 Digital combines strategy, design, technology, and
                 performance marketing to help startups, SMEs, and growing brands
                 launch faster, generate leads, and scale sustainably.
@@ -57,17 +57,8 @@ export function Hero() {
                   onClick={() => setIsModalOpen(true)}
                   className="bg-gradient-to-r from-purple-600 to-cyan-600 hover:from-purple-700 hover:to-cyan-700 text-white px-8 py-6 rounded-2xl shadow-lg shadow-purple-500/25 hover:shadow-purple-500/40 transition-all duration-300 cursor-pointer"
                 >
-                  Let's Build Together
-                  <ArrowRight className="w-5 h-5 ml-2" />
-                </Button>
-
-                <Button
-                  size="lg"
-                  variant="outline"
-                  onClick={() => setIsModalOpen(true)}
-                  className="border-white/20 bg-back hover:bg-white/5 text-white px-8 py-6 rounded-2xl backdrop-blur-sm transition-all duration-300 cursor-pointer"
-                >
                   Book a Free Consultation
+                  <ArrowRight className="w-5 h-5 ml-2" />
                 </Button>
               </div>
             </motion.div>
@@ -80,7 +71,6 @@ export function Hero() {
               className="relative hidden lg:block"
             >
               <div className="relative w-full h-[600px]">
-                {/* Laptop Mockup */}
                 {/* Laptop Mockup */}
                 <motion.div
                   animate={{ y: [0, -20, 0] }}
@@ -101,7 +91,7 @@ export function Hero() {
                   </div>
                 </motion.div>
 
-                {/* Phone Mockup (ab landscape hoga) */}
+                {/* Phone Mockup */}
                 <motion.div
                   animate={{ y: [0, 20, 0] }}
                   transition={{

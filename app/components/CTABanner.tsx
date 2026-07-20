@@ -14,7 +14,7 @@ export function CTABanner() {
         onClose={() => setIsModalOpen(false)}
       />
 
-      <section className="pt-16 pb-10 bg-[#0B0F19] relative overflow-hidden">
+      <section className="pt-10 pb-10 bg-[#0B0F19] relative overflow-hidden">
         {/* Background Gradients */}
         <div className="absolute inset-0">
           <div className="absolute top-1/2 left-1/4 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-purple-500/30 rounded-full blur-[150px]"></div>
@@ -120,14 +120,14 @@ export function CTABanner() {
                       Start Your Project
                       <ArrowRight className="w-5 h-5 ml-2" />
                     </Button>
-                    <Button
+                    {/* <Button
                       size="lg"
                       variant="outline"
                       className="border-white/30 hover:bg-white/10 text-white px-10 py-7 rounded-2xl backdrop-blur-sm transition-all duration-300 text-lg cursor-pointer"
                       onClick={() => setIsModalOpen(true)}
                     >
                       Schedule a Call
-                    </Button>
+                    </Button> */}
                   </motion.div>
 
                   {/* Trust Indicators */}
@@ -150,13 +150,8 @@ export function CTABanner() {
                     <div className="w-px h-4 bg-white/20 hidden lg:block"></div>
                     <div className="flex items-center gap-2">
                       <div className="w-2 h-2 bg-green-400 rounded-full"></div>
-                      <span>No Commitment Required</span>
-                    </div>
-                    {/* <div className="w-px h-4 bg-white/20 hidden sm:block"></div> */}
-                    {/* <div className="hidden sm:flex items-center gap-2">
-                      <div className="w-2 h-2 bg-green-400 rounded-full"></div>
                       <span>Response in 24h</span>
-                    </div> */}
+                    </div>
                   </motion.div>
                 </div>
               </div>

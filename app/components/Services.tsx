@@ -85,7 +85,7 @@ export function Services() {
   return (
     <section
       id="services"
-      className="relative pt-28 bg-[#0B0F19] overflow-hidden"
+      className="relative pt-10 bg-[#0B0F19] overflow-hidden"
     >
       {/* Ambient glows */}
       <div className="absolute inset-0 pointer-events-none">
@@ -104,7 +104,7 @@ export function Services() {
         >
           <div className="flex items-center gap-3 mb-6">
             <div className="w-8 h-px bg-gradient-to-r from-[#7B2FBE] to-[#00D4FF]" />
-            <span className="text-xs font-semibold tracking-[0.25em] uppercase text-[#00D4FF]">
+            <span className="text-xl font-semibold tracking-[0.25em] uppercase text-[#00D4FF]">
               What We Do
             </span>
           </div>
@@ -237,7 +237,7 @@ export function Services() {
         </div>
 
         {/* Bottom rule */}
-        <div className="mt-24 h-px bg-gradient-to-r from-transparent via-white/10 to-transparent" />
+        <div className="mt-10 h-px bg-gradient-to-r from-transparent via-white/10 to-transparent" />
       </div>
     </section>
   );
