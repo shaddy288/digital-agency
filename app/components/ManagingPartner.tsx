@@ -42,14 +42,14 @@ export function ManagingPartner() {
         </motion.div>
 
         {/* ── Heading ── */}
-        <motion.h2
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="bg-gradient-to-r from-[#7B2FBE] via-[#C850C0] to-[#00D4FF] bg-clip-text text-transparent text-3xl sm:text-4xl lg:text-5xl xl:text-[3.5rem] font-extrabold leading-[1.3] tracking-tight pb-2 mb-10 sm:mb-12 lg:mb-16"
-        >
-          From the Managing Partner's Desk
-        </motion.h2>
+        <h2 className="text-3xl sm:text-4xl lg:text-5xl xl:text-[3.5rem] font-extrabold leading-[1.1] tracking-tight text-white mb-5 sm:mb-6">
+          From the Managing{" "}
+          <span className="relative inline-block">
+            <span className="bg-gradient-to-r from-[#7B2FBE] via-[#C850C0] to-[#00D4FF] bg-clip-text text-transparent">
+               Partner's Desk
+            </span>
+          </span>
+        </h2>
 
         {/* ── Content: Image left, text right ── */}
         <div className="flex flex-col lg:flex-row gap-8 lg:gap-14">
