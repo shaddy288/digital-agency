@@ -7,13 +7,13 @@ const bodyParagraphs = [
   "As a media leader, digital strategist, cultural entrepreneur, and certified Independent Director, I bring a seasoned perspective to every engagement, combining strategic thinking with execution excellence. We, at VR2 Digital Studio aim to be your trusted growth partner, helping you to unlock opportunities, and build digital advantage in an increasingly competitive and connected world.",
 ];
 
-const credentials = [
-  "30+ Years Experience",
-  "Media Leader",
-  "Digital Strategist",
-  "Cultural Entrepreneur",
-  "Certified Independent Director",
-];
+// const credentials = [
+//   "30+ Years Experience",
+//   "Media Leader",
+//   "Digital Strategist",
+//   "Cultural Entrepreneur",
+//   "Certified Independent Director",
+// ];
 
 export function ManagingPartner() {
   return (
@@ -107,7 +107,7 @@ export function ManagingPartner() {
         </div>
 
         {/* ── Divider with dots (matches screenshot) ── */}
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
@@ -117,10 +117,10 @@ export function ManagingPartner() {
           <div className="w-2 h-2 rounded-full bg-gradient-to-r from-[#7B2FBE] to-[#E8341C] flex-shrink-0" />
           <div className="flex-1 h-px bg-gradient-to-r from-[#7B2FBE]/50 via-white/15 to-[#E8341C]/50" />
           <div className="w-2 h-2 rounded-full bg-gradient-to-r from-[#7B2FBE] to-[#E8341C] flex-shrink-0" />
-        </motion.div>
+        </motion.div> */}
 
         {/* ── Credential pills ── */}
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -135,8 +135,7 @@ export function ManagingPartner() {
               {c}
             </span>
           ))}
-        </motion.div>
-
+        </motion.div> */}
       </div>
     </section>
   );
