@@ -1,5 +1,8 @@
+"use client";
+import { useState } from "react";
 import { motion } from "motion/react";
 import Image from "next/image";
+import { ChevronDown } from "lucide-react";
 
 const bodyParagraphs = [
   "I have had the privilege of leading digital businesses through periods of significant transformation across media platforms, content ecosystems, and technological advancements. My three decades long journey has been dotted with leading digital transformations, driving strategic innovation leading to sustainable business growth.",
@@ -7,17 +10,11 @@ const bodyParagraphs = [
   "As a media leader, digital strategist, cultural entrepreneur, and certified Independent Director, I bring a seasoned perspective to every engagement, combining strategic thinking with execution excellence. We, at VR2 Digital Studio aim to be your trusted growth partner, helping you to unlock opportunities, and build digital advantage in an increasingly competitive and connected world.",
 ];
 
-// const credentials = [
-//   "30+ Years Experience",
-//   "Media Leader",
-//   "Digital Strategist",
-//   "Cultural Entrepreneur",
-//   "Certified Independent Director",
-// ];
-
 export function ManagingPartner() {
+  const [expanded, setExpanded] = useState(false);
+
   return (
-    <section className="relative px-5 py-10 lg:py-10 bg-[#0B0F19] overflow-hidden">
+    <section className="relative px-5 py-5 lg:py-10 bg-[#0B0F19] overflow-hidden">
       {/* ── Full-bleed atmospheric background ── */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[900px] h-[900px] rounded-full bg-[#7B2FBE]/8 blur-[160px]" />
@@ -42,12 +39,10 @@ export function ManagingPartner() {
         </motion.div>
 
         {/* ── Heading ── */}
-        <h2 className="text-3xl sm:text-4xl lg:text-5xl xl:text-[3.5rem] font-extrabold leading-[1.1] tracking-tight text-white mb-5 sm:mb-6">
+        <h2 className="text-[22px] sm:text-4xl lg:text-5xl xl:text-[3.5rem] font-extrabold leading-[1.1] tracking-tight text-white mb-5 sm:mb-6">
           From the Managing{" "}
-          <span className="relative inline-block">
-            <span className="bg-gradient-to-r from-[#7B2FBE] via-[#C850C0] to-[#00D4FF] bg-clip-text text-transparent">
-               Partner's Desk
-            </span>
+          <span className="bg-gradient-to-r from-[#7B2FBE] via-[#C850C0] to-[#00D4FF] bg-clip-text text-transparent">
+            Partner's Desk
           </span>
         </h2>
 
@@ -95,47 +90,37 @@ export function ManagingPartner() {
             transition={{ duration: 0.6, delay: 0.15 }}
             className="flex-1 space-y-5"
           >
-            {bodyParagraphs.map((p, i) => (
+            {/* Pehla paragraph hamesha dikhega — mobile aur desktop dono pe */}
+            <p className="text-white/65 text-sm sm:text-base leading-relaxed">
+              {bodyParagraphs[0]}
+            </p>
+
+            {/* Baaki paragraphs — desktop pe hamesha visible, mobile pe sirf expanded hone par */}
+            {bodyParagraphs.slice(1).map((p, i) => (
               <p
                 key={i}
-                className="text-white/65 text-sm sm:text-base leading-relaxed"
+                className={`text-white/65 text-sm sm:text-base leading-relaxed ${
+                  expanded ? "block" : "hidden"
+                } lg:block`}
               >
                 {p}
               </p>
             ))}
+
+            {/* Read More / Read Less button — sirf mobile pe dikhega */}
+            <button
+              onClick={() => setExpanded(!expanded)}
+              className="lg:hidden inline-flex items-center gap-1.5 text-sm font-semibold text-[#00D4FF] hover:text-[#C850C0] transition-colors duration-300"
+            >
+              {expanded ? "Read Less" : "Read More"}
+              <ChevronDown
+                className={`w-4 h-4 transition-transform duration-300 ${
+                  expanded ? "rotate-180" : ""
+                }`}
+              />
+            </button>
           </motion.div>
         </div>
-
-        {/* ── Divider with dots (matches screenshot) ── */}
-        {/* <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          transition={{ delay: 0.2 }}
-          className="flex items-center gap-2 mt-10 lg:mt-14"
-        >
-          <div className="w-2 h-2 rounded-full bg-gradient-to-r from-[#7B2FBE] to-[#E8341C] flex-shrink-0" />
-          <div className="flex-1 h-px bg-gradient-to-r from-[#7B2FBE]/50 via-white/15 to-[#E8341C]/50" />
-          <div className="w-2 h-2 rounded-full bg-gradient-to-r from-[#7B2FBE] to-[#E8341C] flex-shrink-0" />
-        </motion.div> */}
-
-        {/* ── Credential pills ── */}
-        {/* <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ delay: 0.25 }}
-          className="flex flex-wrap justify-center lg:justify-center gap-2 mt-8"
-        >
-          {credentials.map((c) => (
-            <span
-              key={c}
-              className="px-3.5 py-1.5 text-xs font-medium rounded-full border border-white/10 bg-white/5 text-white/45"
-            >
-              {c}
-            </span>
-          ))}
-        </motion.div> */}
       </div>
     </section>
   );

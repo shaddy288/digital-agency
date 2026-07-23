@@ -48,7 +48,7 @@ export function Process() {
 
       <section
         id="process"
-        className="pt-10 pb-10 bg-[#0B0F19] relative overflow-hidden"
+        className="pt-5 pb-5 bg-[#0B0F19] relative overflow-hidden"
       >
         {/* Background Elements */}
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-purple-500/5 rounded-full blur-[120px]"></div>
@@ -58,7 +58,7 @@ export function Process() {
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-center mb-20"
+            className="text-center mb-5"
           >
             <h2 className="text-5xl sm:text-6xl font-bold text-white mb-6">
               Our{" "}
@@ -119,7 +119,7 @@ export function Process() {
 
                     {/* Connection Line - Mobile */}
                     {index < steps.length - 1 && (
-                      <div className="lg:hidden flex justify-center my-6">
+                      <div className="lg:hidden hidden flex justify-center my-6">
                         <div className="w-0.5 h-12 bg-gradient-to-b from-purple-500/20 to-cyan-500/20"></div>
                       </div>
                     )}
@@ -136,7 +136,7 @@ export function Process() {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ delay: 0.5 }}
-            className="mt-16 text-center"
+            className="mt-5 text-center"
           >
             <div className="inline-flex flex-col sm:flex-row flex-wrap items-center justify-center gap-4 sm:gap-0 px-6 sm:px-8 py-6 rounded-3xl bg-white/5 backdrop-blur-xl border border-white/10 w-full sm:w-auto">
               {[
@@ -171,7 +171,7 @@ export function Process() {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ delay: 0.8 }}
-            className="text-center mt-16"
+            className="text-center mt-5"
           >
             <button
               onClick={() => setIsModalOpen(true)}

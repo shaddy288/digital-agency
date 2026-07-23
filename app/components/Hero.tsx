@@ -17,7 +17,7 @@ export function Hero() {
         onClose={() => setIsModalOpen(false)}
       />
 
-      <section className="relative min-h-[65vh] lg:min-h-screen flex items-center justify-center overflow-hidden">
+      <section className="relative min-h-[60vh] lg:min-h-screen flex items-center justify-center overflow-hidden">
         {/* Gradient Background */}
         <div className="absolute inset-0 bg-[#0B0F19]">
           <div className="absolute inset-0 bg-gradient-to-br from-purple-900/20 via-transparent to-cyan-900/20"></div>
@@ -38,14 +38,14 @@ export function Hero() {
               transition={{ duration: 0.8 }}
               className="text-center lg:text-left"
             >
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-6xl font-bold text-white mb-3 lg:mb-6 leading-tight">
+              <h1 className="text-2xl sm:text-4xl lg:text-6xl xl:text-6xl font-bold text-white mb-3 lg:mb-6 leading-tight">
                 From Idea to Scale.
                 <span className="block bg-gradient-to-r from-purple-400 via-cyan-400 to-purple-400 bg-clip-text text-transparent">
                   We Build Digital Businesses That Grow.
                 </span>
               </h1>
 
-              <p className="text-lg sm:text-xl text-gray-400 mb-4 lg:mb-8 max-w-2xl mx-auto lg:mx-0">
+              <p className="text-sm sm:text-lg lg:text-xl text-gray-400 mb-4 lg:mb-8 max-w-2xl mx-auto lg:mx-0">
                 VR2 Digital combines strategy, design, technology, and
                 performance marketing to help startups, SMEs, and growing brands
                 launch faster, generate leads, and scale sustainably.
@@ -55,10 +55,10 @@ export function Hero() {
                 <Button
                   size="lg"
                   onClick={() => setIsModalOpen(true)}
-                  className="bg-gradient-to-r from-purple-600 to-cyan-600 hover:from-purple-700 hover:to-cyan-700 text-white px-8 py-6 rounded-2xl shadow-lg shadow-purple-500/25 hover:shadow-purple-500/40 transition-all duration-300 cursor-pointer"
+                  className="bg-gradient-to-r from-purple-600 to-cyan-600 hover:from-purple-700 hover:to-cyan-700 text-white text-sm sm:text-base px-6 sm:px-8 py-4 sm:py-6 rounded-2xl shadow-lg shadow-purple-500/25 hover:shadow-purple-500/40 transition-all duration-300 cursor-pointer"
                 >
                   Book a Free Consultation
-                  <ArrowRight className="w-5 h-5 ml-2" />
+                  <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 ml-2" />
                 </Button>
               </div>
             </motion.div>

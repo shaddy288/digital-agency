@@ -2,7 +2,7 @@ export function About() {
   return (
     <section
       id="about"
-      className="relative pt-10 sm:pt-10 lg:pt-10 overflow-hidden bg-[#0B0F19]"
+      className="relative pt-5 sm:pt-10 lg:pt-10 overflow-hidden bg-[#0B0F19]"
     >
       {/* Ambient mesh background */}
       <div className="absolute inset-0 pointer-events-none">
@@ -21,7 +21,7 @@ export function About() {
         </div>
 
         {/* Two-column layout */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 sm:gap-14 lg:gap-24 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-14 lg:gap-24 items-center">
           {/* Left — headline + tagline */}
           <div>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl xl:text-[3.5rem] font-extrabold leading-[1.1] tracking-tight text-white mb-5 sm:mb-6">
@@ -36,7 +36,7 @@ export function About() {
             </h2>
 
             {/* Tagline pill */}
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-white/10 bg-white/5 backdrop-blur-sm mb-6 sm:mb-8">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-white/10 bg-white/5 backdrop-blur-sm mb-3 sm:mb-8">
               <span className="w-1.5 h-1.5 rounded-full bg-[#FF6B35] animate-pulse" />
               <span className="text-sm font-medium text-white/70">
                 Design. Build. Grow.
@@ -144,7 +144,7 @@ export function About() {
         </div>
 
         {/* Bottom divider */}
-        <div className="mt-10 sm:mt-10 lg:mt-14 h-px bg-gradient-to-r from-transparent via-white/10 to-transparent" />
+        <div className="mt-5 sm:mt-10 lg:mt-14 h-px bg-gradient-to-r from-transparent via-white/10 to-transparent" />
       </div>
     </section>
   );

@@ -13,18 +13,18 @@ export function ClientLogos() {
   ];
 
   return (
-    <section className="border-y border-white/5 bg-[#0B0F19] py-20 sm:py-10">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="border-y border-white/5 bg-[#0B0F19] py-8 sm:py-0">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 lg:py-12">
         {/* Section Badge */}
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 0.2 }}
-          className="mb-10 flex justify-center"
+          className="mb-5 sm:mb-10 flex justify-center"
         >
-          <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 backdrop-blur-sm">
-            <Sparkles className="h-4 w-4 text-purple-400" />
-            <span className="text-lg font-medium text-gray-300">
+          <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1.5 sm:px-4 sm:py-2 backdrop-blur-sm">
+            <Sparkles className="h-3.5 w-3.5 sm:h-4 sm:w-4 text-purple-400" />
+            <span className="text-sm sm:text-lg font-medium text-gray-300">
               Industries We Serve
             </span>
           </div>
@@ -32,7 +32,7 @@ export function ClientLogos() {
 
         {/* Industries */}
         <div className="relative overflow-hidden">
-          <div className="flex flex-wrap items-center justify-center gap-8 md:gap-14">
+          <div className="flex flex-wrap items-center justify-center gap-4 sm:gap-8 md:gap-14">
             {industries.map((industry, index) => (
               <motion.div
                 key={industry}
@@ -44,7 +44,7 @@ export function ClientLogos() {
                   scale: 1.08,
                   color: "#ffffff",
                 }}
-                className="cursor-pointer text-center text-xl font-bold tracking-wide text-white/30 transition-colors duration-300 md:text-3xl"
+                className="cursor-pointer text-center text-sm sm:text-xl font-bold tracking-wide text-white/30 transition-colors duration-300 md:text-3xl"
               >
                 {industry}
               </motion.div>

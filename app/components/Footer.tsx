@@ -84,7 +84,7 @@ export function Footer() {
               </div>
 
               {/* Links */}
-              <div className="grid grid-cols-2 gap-8 sm:grid-cols-3 lg:col-span-7">
+              <div className="grid grid-cols-3 gap-8 sm:grid-cols-3 lg:col-span-7">
                 {/* Services */}
                 <motion.div
                   initial={{ opacity: 0, y: 20 }}
